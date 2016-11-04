@@ -1,0 +1,80 @@
+@import url(lks_base.css);
+.body{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background: url(../images/wp4.jpg)no-repeat 50% 90%;
+}
+.body .list_t{
+    margin:45px auto;
+    width:1155px;
+    height:300px;
+    border:1px dashed #333;
+
+}
+.body .list_t li{
+    width:230px;
+    height:150px;
+    float: left;
+    background: #fff;
+    /*opacity: 0.3;*/
+}
+.k{
+    border-right:1px dashed #333;
+}
+.bk{
+    border:none;
+}
+.k .content{
+    width: 230px;
+    height: 150px;
+    overflow: hidden;
+    /*background: red;*/
+    position: relative;
+    z-index:1;
+}
+.list_hovers{
+    width: 230px;
+    height: 150px;
+    background: #de3;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+    -webkit-transition:all 1s;
+}
+.k .content .box{
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    -webkit-transition: 1s;
+}
+.k .content .box:hover{
+    margin-top: -150px;
+}
+.k .content .box .img_k{
+    height: 150px;
+    width: 100%;
+}
+.img1{background-image: url("../images/clients.png");}
+.img2{background-image: url("../images/clients.png");background-position: 0 150px;}
+.img3{background-image: url("../images/clients.png");background-position: 230px 0;}
+.img4{background-image: url("../images/clients.png");background-position: 230px 150px;}
+.img5{background-image: url("../images/clients.png");background-position: 460px 0;}
+.img6{background-image: url("../images/clients.png");background-position: 460px 150px;}
+.img7{background-image: url("../images/clients.png");background-position: 690px 0;}
+.img8{background-image: url("../images/clients.png");background-position: 690px 150px;}
+.img9{background-image: url("../images/clients.png");background-position:  920px 0;}
+.img10{background-image: url("../images/clients.png");background-position: 920px 150px;}
+.img11{background-image: url("../images/clients.png");background-position: 1150px 0;}
+.img12{background-image: url("../images/clients.png");background-position: 1150px 150px;}
+.img13{background-image: url("../images/clients.png");background-position: 1380px 0;}
+.img14{background-image: url("../images/clients.png");background-position: 1380px 150px;}
+.img15{background-image: url("../images/clients.png");background-position: 1620px 0;}
+.img16{background-image: url("../images/clients.png");background-position: 1620px 150px;}
+.img17{background-image: url("../images/clients.png");background-position: 1850px 0;}
+.img18{background-image: url("../images/clients.png");background-position: 1850px 150px;}
+.img19{background-image: url("../images/clients.png");background-position: 2080px 0;}
+.img20{background-image: url("../images/clients.png");background-position: 2080px 150px;}
+

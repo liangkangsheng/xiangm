@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千助</title>
+    <link rel="stylesheet" href="css/qianzhu.css">
+    <script>
+        window.onload=function(){
+            var list_t=document.getElementById("list_t");//ul框
+            var content=document.getElementsByClassName("content");
+            var list;
+            var nowPosition;
+            list_t.addEventListener("mouseover",function (e) {
+                if(! nowPosition){
+                    list=document.createElement("div");
+                    list.className="list_hovers";
+                    list_t.appendChild(list);
+                }
+                nowPosition=e.target;
+                var nowContainer=e.target.parentElement.parentElement;
+                if(nowContainer.className=="content"){
+                    var Left = e.target.parentElement.parentElement.offsetLeft;
+                    var Top = e.target.parentElement.parentElement.offsetTop;
+                    list.style.left=Left+"px";
+                    list.style.top=Top+"px";
+
+                }else{
+                    list.remove();
+                    nowPosition="";
+                }
+            });
+            list_t.addEventListener('mouseleave',function(e){
+                list.remove();
+                nowPosition="";
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+        <ul class="list_t" id="list_t">
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img1"></div>
+                        <div class="img_k img2"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img3"></div>
+                        <div class="img_k img4"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img5"></div>
+                        <div class="img_k img6"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img7"></div>
+                        <div class="img_k img8"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k bk">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img9"></div>
+                        <div class="img_k img10"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img11"></div>
+                        <div class="img_k img12"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img13"></div>
+                        <div class="img_k img14"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img15"></div>
+                        <div class="img_k img16"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img17"></div>
+                        <div class="img_k img18"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="k bk">
+                <div class="content">
+                    <div class="box">
+                        <div class="img_k img19"></div>
+                        <div class="img_k img20"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
